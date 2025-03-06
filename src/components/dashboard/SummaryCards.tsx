@@ -61,7 +61,7 @@ export const SummaryCards = () => {
             <div
               className={clsx(
                 card.date
-                  ? "text-2xl text-card-foreground leading-normal [text-shadow:_0px_6px_5px_#00000040] -tracking-widest font-black"
+                  ? "text-2xl text-card-foreground leading-normal [text-shadow:_0px_6px_5px_#00000040] -tracking-[0.04em] font-black"
                   : "text-2xl font-bold leading-normal text-card-foreground"
               )}
             >
