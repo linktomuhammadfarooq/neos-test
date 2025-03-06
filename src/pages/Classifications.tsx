@@ -109,10 +109,7 @@ export default function Classifications() {
     }
   };
   const handleDeleteClassification = (id: string) => {
-    // Find the firm before deleting
     const firm = firms.find((f) => f.id === id);
-
-    // Update firms list
     const updatedFirms = firms.map((firm) =>
       firm.id === id
         ? {
@@ -123,8 +120,6 @@ export default function Classifications() {
         : firm
     );
     setFirms(updatedFirms);
-
-    // Add audit entry
     if (firm) {
       const newEntry: AuditTrailEntry = {
         id: Date.now().toString(),
