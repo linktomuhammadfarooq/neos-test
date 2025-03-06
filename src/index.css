@@ -152,7 +152,8 @@
   }
   html {
     font-family: "Inter", sans-serif;
-    width: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
   body {
     @apply bg-background text-foreground;
@@ -166,8 +167,4 @@
 }
 .table-data {
   @apply text-foreground text-sm font-normal font-inter leading-normal tracking-normal;
-}
-.main-content {
-  position: relative;
-  left: calc((100vw - 100%) / 2);
 }
